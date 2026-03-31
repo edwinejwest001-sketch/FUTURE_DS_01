@@ -1,6 +1,7 @@
 Superstore Sales Analysis using SQL
 
 Project Overview
+
 This project analyzes retail sales performance using SQL and the Superstore dataset.  
 The objective is to transform raw transactional data into a structured relational database and perform business analysis to generate actionable insights.
 
