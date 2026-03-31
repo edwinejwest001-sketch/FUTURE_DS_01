@@ -8,6 +8,7 @@ The objective is to transform raw transactional data into a structured relationa
 All financial values are expressed in USD ($).
 
 Business Problem
+
 Retail companies generate large volumes of transactional data but often struggle to extract meaningful insights.  
 This project addresses key questions:
 
@@ -69,11 +70,12 @@ Order_Items
 | discount | Discount applied      |
 | profit   | Profit generated      |
 
-## SQL Analysis
-Analytical queries were performed to answer business questions.  
-See `Documentation/analysis_description.md` for detailed queries and explanations.
+SQL Analysis
 
-### Key Insights
+Analytical queries were performed to answer business questions.  
+See `" "` for detailed queries and explanations.
+
+Key Insights
 - Technology generates the highest revenue and profit.
 - Sales increased over the years.
 - West region contributes most to revenue and profit.
@@ -81,7 +83,7 @@ See `Documentation/analysis_description.md` for detailed queries and explanation
 - Some product sub-categories drive the majority of revenue.
 - Certain high-revenue products (e.g., Tables) are not profitable.
 
-### Recommendations
+Recommendations
 - Focus marketing and inventory on high-performing product categories.
 - Develop retention strategies for high-value customers.
 - Monitor regional performance to identify inefficiencies.
