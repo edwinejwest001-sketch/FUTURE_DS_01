@@ -31,7 +31,7 @@ The business generated over $2.3M in sales with an overall profitability of arou
 Which product categories generate the most revenue and profit? 
 -- Profit by Category
     
-SELECT DISTINCT Category ,SUM (Profit) AS Total_Profit,SUM(Sales) AS Total_revenue
+SELECT Category ,SUM (Profit) AS Total_Profit,SUM(Sales) AS Total_revenue
 FROM Products p
 Join Order_Item oi
 ON p.Product_ID=oi.Product_ID
@@ -50,8 +50,6 @@ ORDER BY Category desc
 
 ---
  
-# Analysis 3: Sales Trend by Month
-
 # Analysis : Sales Trend by Year
 
 ### Business Question
@@ -91,10 +89,10 @@ FROM Order_Item oi
 JOIN Orders o ON oi.Order_ID=o.Order_ID
 JOIN Customers c ON o.Customer_ID=c.Customer_ID
 GROUP BY Region
-ORDER BY Total_Profit DESC
+ORDER BY Total_Revenue DESC
     
 ### Result
-| Region | Revenue | Profit | Profit Margin |
+| Region | Total_Profit | Total_Revenue| Profit Margin |
 |------|------|------|------|
 |Central|	246132.09|	1953098.52|	12.600000%|
 |East|	28934.73|	282745.01|	10.200000%|
@@ -154,7 +152,7 @@ ORDER BY total_profit DESC;
 | Category | Total Profit | Profit Level |
 |------|------|-----|
 |Technology | 145455.35	| High Profit|
-|Office Supplies	122490.08 |	High Profit|
+|Office | Supplies | 122490.08 |	High Profit|
 |Furniture |	18883.19 |	Low Profit|
 
 
