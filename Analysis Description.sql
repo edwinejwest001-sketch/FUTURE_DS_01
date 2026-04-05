@@ -152,7 +152,7 @@ ORDER BY total_profit DESC;
 | Category | Total Profit | Profit Level |
 |------|------|-----|
 |Technology | 145455.35	| High Profit|
-|Office | Supplies | 122490.08 |	High Profit|
+|Office Supplies | 122490.08 |	High Profit|
 |Furniture |	18883.19 |	Low Profit|
 
 
