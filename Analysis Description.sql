@@ -102,8 +102,7 @@ ORDER BY Total_Profit DESC
 |West|	2386.77|	10588.11|	22.500000%|
     
  ### Insights
-- The West and East regions generate the highest revenue and profit.
-- The Central region shows the lowest profit margin, indicating potential inefficiencies or higher operational costs.
+- Central has the highest profit (though lowest margin), and West/East/South have progressively lower profits
        
 ## Analysis 5: Top Product Sub-Categories
 ### Business Question
@@ -119,7 +118,7 @@ FROM Order_item oi
 JOIN Products p
     ON oi.Product_ID = p.Product_ID
 GROUP BY p.sub_category
-ORDER BY profit_margin_pct DESC
+ORDER BY total_revenue  DESC
     
 | Sub Category | Total Revenue | Total Profit | Profit Margin |
 |Phones | 330007.10 | 44516.04 | 13.490000|
